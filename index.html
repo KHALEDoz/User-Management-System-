@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Management System</h1>
+        
+        <!-- Form Section -->
+        <div class="form-section">
+            <h2>Add New User</h2>
+            <form id="userForm" class="user-form">
+                <div class="form-row">
+                    <input type="text" id="name" name="name" placeholder="Enter name" required>
+                    <input type="number" id="age" name="age" placeholder="Enter age" min="1" max="120" required>
+                    <button type="submit" class="submit-btn">Add User</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Table Section -->
+        <div class="table-section">
+            <h2>User Records</h2>
+            <div id="tableContainer">
+                <!-- Table will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
